@@ -73,15 +73,22 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
+TW_EXTRA_LANGUAGES := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_INCLUDE_REPACKTOOLS := true
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_NTFS_3G := true
+TW_BACKUP_EXCLUSIONS := /data/fonts
+TW_NO_SCREEN_BLANK := true
+TW_MAX_BRIGHTNESS := 3515
+TW_DEFAULT_BRIGHTNESS := 1024
+TW_FRAMERATE := 60
+TW_HAS_EDL_MODE := true
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_NTFS_3G := true
 TW_USE_TOOLBOX := true
-TW_INCLUDE_RESETPROP := true
-TW_INCLUDE_REPACKTOOLS := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone79/temp"
@@ -90,7 +97,6 @@ TW_H_OFFSET := -120
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
-TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
 
 # Crypto
